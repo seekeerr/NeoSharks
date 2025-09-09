@@ -1,38 +1,36 @@
 const Faq = () => {
   const faqData = [
-    {
-      question: "What is web hosting?",
-      answer:
-        "Duis aute irure dolor in reprehenderit in voluptate velit ess dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt.",
-    },
-    {
-      question: "How do you weigh different criteria in your process?",
-      answer:
-        "Duis aute irure dolor in reprehenderit in voluptate velit ess dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt.",
-    },
-    {
-      question: "What can I use to build my website?",
-      answer:
-        "Duis aute irure dolor in reprehenderit in voluptate velit ess dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt.",
-    },
-    {
-      question:
-        "If I already have a website, can I transfer it to your web hosting?",
-      answer:
-        "Duis aute irure dolor in reprehenderit in voluptate velit ess dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt.",
-    },
-    {
-      question: "How can I accept credit cards online?",
-      answer:
-        "Duis aute irure dolor in reprehenderit in voluptate velit ess dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt.",
-    },
-    {
-      question: "What are the additional requirements I should know about?",
-      answer:
-        "Duis aute irure dolor in reprehenderit in voluptate velit ess dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt.",
-    },
-  ];
-
+     {
+       question: "How soon can we go live with a new website?",
+       answer:
+         "Typical timelines range from 4 to 6 weeks depending on features and complexity. For urgent projects, we offer fast-track launch options without compromising quality.",
+     },
+     {
+       question: "Will my website be SEO-optimized?",
+       answer:
+         "Yes. All websites are built with SEO best practices such as server-side rendering, schema markups, mobile responsiveness, and fast-loading pages to maximize visibility.",
+     },
+     {
+       question: "Does NeoSharks provide scalable solutions for future growth?",
+       answer:
+         "Yes. Our solutions are designed with scalability in mind. Using AWS, SQL, and MongoDB, we ensure your system can grow as your traffic, data, and business needs expand.",
+     },
+     {
+       question: "How does NeoSharks handle communication and project updates?",
+       answer:
+         "We maintain transparent communication with weekly or bi-weekly updates. Clients have direct access to progress reports, sprint reviews, and feedback loops throughout the project.",
+     },
+     {
+       question: "Can NeoSharks integrate AI or automation into my project?",
+       answer:
+         "Yes. We use OpenAI and automation frameworks to build features like chatbots, content generation, workflow automation, and analytics. These solutions are tailored to business goals.",
+     },
+     {
+       question: "What kind of post-launch support do you offer?",
+       answer:
+         "We provide ongoing support including maintenance, security updates, performance audits, SEO monitoring, and feature enhancements to keep your application running smoothly.",
+     },
+   ];
   return (
     <div className="accordion accordion-style-two" id="accordionOne">
       {faqData.map((faq, index) => (

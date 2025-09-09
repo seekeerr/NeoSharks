@@ -143,8 +143,25 @@ const MainMenu = () => {
             >
              Careers
             </a>
-          
           </li>
+          <li className="nav-item  mega-dropdown-md">
+                      <a
+                        // className="nav-link dropdown-toggle active-menu"
+
+                        role="button"
+                        className={
+                          menuItems.some((menu) =>
+                            menu.items.some((elm) => isActive(elm.link))
+                          )
+                            ? "nav-link "
+                : "nav-link"
+                        }
+
+                        // style={{color:'green'}}
+                      >
+                       FAQ's
+                      </a>
+                    </li>
         </ul>
         {/* End ul */}
 

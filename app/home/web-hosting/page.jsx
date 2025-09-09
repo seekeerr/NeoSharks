@@ -62,12 +62,16 @@ const WebHosting = () => {
                   data-aos="fade-up"
                 >
                   <h2 className="main-title fw-bold tx-dark">
-                    Solo, Agency or Team? We’ve got you
-                    <span className="position-relative d-inline-block">
-                      covered
-                      <img src="/images/shape/shape_96.svg" alt="shape" />
-                    </span>
+                    Design. Develop. Deploy. 
+                   
+                    
                   </h2>
+                 <span className="position-relative d-inline-block">
+  <img src="/images/shape/shape_96.svg" alt="shape" />
+  <p className="position-absolute top-50 start-50 translate-middle m-0">
+    — End-to-End Solutions
+  </p>
+</span>
                 </div>
                 {/* /.title-style-seven */}
               </div>

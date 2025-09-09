@@ -14,7 +14,7 @@
     "bootstrap": "^5.3.6",
     "caniuse-lite": "^1.0.30001718",
     "carousel": "^0.0.3",
-    "next": "15.1.8",
+    "next": "^15.5.2",
     "photoswipe": "^5.4.4",
     "react": "19.1.0",
     "react-circular-progressbar": "^2.2.0",

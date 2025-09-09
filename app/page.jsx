@@ -1,6 +1,6 @@
 import WebHosting from "./home/web-hosting/page";
 export const metadata = {
-  title: "Insurance || Jano - Creative Multipurpose React NextJS Template",
+  title: "Neo Sharks",
 };
 const MainRoot = () => {
   return <WebHosting />;

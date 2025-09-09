@@ -11,38 +11,35 @@ const Hero = () => {
                 href="/pages-menu/pricing"
                 className="slogan d-inline-block"
               >
-                <strong className="fw-500">Offer</strong>
-                is going on till friday, $1.99/mo.
-                <i className="fas fa-chevron-right" />
+                Future-Ready Apps
               </Link>
               <h1 className="hero-heading fw-bold tx-dark mt-25">
-                Trust your site to the world’s
-                <span className="position-relative ms-3 d-inline-block">
-                  no. 1 <img src="/images/shape/shape_95.svg" alt="shape" />
-                </span>
-                web host.
+                Turn Your   
+               <span className="position-relative ms-3 d-inline-block" style={{ marginRight: "0.4em" }}>
+  Ideas <img src="/images/shape/shape_95.svg" style={{width:"400px", height:"120px"}} alt="shape" />
+</span>
+             Into Powerful Web Apps.
               </h1>
               <p className="text-lg mb-70 pt-35 pe-xxl-5 md-pt-30 lg-mb-40">
-                Already have a website? Try our hosting to alive it With
-                industry-leading load times.
+                Our expert team designs and develops innovative apps that combine speed, security, and seamless user experience.
               </p>
               <Link
                 href="/pages-menu/pricing"
                 className="btn-fourteen fw-500 tran3s"
               >
-                Plans starting at only $3.95/mo
+                Get a Free Consultation
               </Link>
             </div>
           </div>
           {/* End .container */}
 
-          <div className="illustration-holder" data-aos="fade-left">
+          {/* <div className="illustration-holder" data-aos="fade-left">
             <img
               src="/images/assets/sharkshero.png"
               alt="illustration"
               className="lazy-img main-illustration"
             />
-          </div>
+          </div> */}
           {/* /.illustration-holder */}
         </div>
         {/* /.container */}

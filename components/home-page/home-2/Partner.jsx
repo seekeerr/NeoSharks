@@ -40,15 +40,20 @@ const Partner = () => {
     "/images/logo/Plogo-25.png",
     "/images/logo/Plogo-26.png",
     "/images/logo/Plogo-27.png",
-    "/images/logo/Plogo-24.png",
-    "/images/logo/Plogo-26.png",
+    "/images/logo/Plogo-28.png",
+    "/images/logo/Plogo-29.png", 
+    "/images/logo/Plogo-30.png",
   ];
 
   return (
     <Slider {...settings} arrows={false}>
       {partnerLogos.map((logo, index) => (
         <div className="item" key={index}>
-          <img src={logo} alt="" className="m-auto" />
+          <img src={logo} alt="" style={{
+          width: "120px",   // ✅ pick a consistent width
+          height: "60px",   // ✅ pick a consistent height
+          objectFit: "contain",
+        }} />
         </div>
       ))}
     </Slider>

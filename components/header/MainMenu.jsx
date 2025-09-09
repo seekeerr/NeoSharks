@@ -35,7 +35,7 @@ const MainMenu = () => {
       {/* End mobile collapse menu */}
 
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ">
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link href="/" className="d-block">
@@ -50,117 +50,62 @@ const MainMenu = () => {
           </li>
           {/* End li */}
 
-          <li className="nav-item  mega-dropdown-md">
-            <a
-              // className="nav-link dropdown-toggle active-menu"
-              
-              role="button"
-              className={
-                menuItems.some((menu) =>
-                  menu.items.some((elm) => isActive(elm.link))
-                )
-                  ? "nav-link "
-      : "nav-link"
-              }
-
-              // style={{color:'green'}}
-            >
-              About us
-            </a>
-          
+          <li className="nav-item  mega-dropdown-md" style={{
+            width:"140px"
+          }}>
+             <Link
+    href="#our-about-us"
+    scroll={true} // allows scrolling to anchors
+    className="nav-link"
+  >
+    About Us
+  </Link>
           </li>
           {/* End li (home mega menu) */}
 
            <li className="nav-item  mega-dropdown-md">
-            <a
-              // className="nav-link dropdown-toggle active-menu"
-              
-              role="button"
-              className={
-                menuItems.some((menu) =>
-                  menu.items.some((elm) => isActive(elm.link))
-                )
-                  ? "nav-link "
-      : "nav-link"
-              }
-
-              // style={{color:'green'}}
-            >
-              Services
-            </a>
+            <Link
+    href="#our-services"
+    scroll={true} // allows scrolling to anchors
+    className="nav-link"
+  >
+    Services
+  </Link>
+          </li>  <li className="nav-item  mega-dropdown-md">
+             <Link
+    href="#our-portfolio"
+    scroll={true} // allows scrolling to anchors
+    className="nav-link"
+  >
+    Portfolio
+  </Link>
           
           </li>  <li className="nav-item  mega-dropdown-md">
-            <a
-              // className="nav-link dropdown-toggle active-menu"
-              
-              role="button"
-              className={
-                menuItems.some((menu) =>
-                  menu.items.some((elm) => isActive(elm.link))
-                )
-                  ? "nav-link "
-      : "nav-link"
-              }
-
-              // style={{color:'green'}}
-            >
-              Portfolio
-            </a>
-          
-          </li>  <li className="nav-item  mega-dropdown-md">
-            <a
-              // className="nav-link dropdown-toggle active-menu"
-              
-              role="button"
-              className={
-                menuItems.some((menu) =>
-                  menu.items.some((elm) => isActive(elm.link))
-                )
-                  ? "nav-link "
-      : "nav-link"
-              }
-
-              // style={{color:'green'}}
-            >
-             Blogs
-            </a>
+           <Link
+    href="#our-blogs"
+    scroll={true} // allows scrolling to anchors
+    className="nav-link"
+  >
+    Blogs
+  </Link>
           
           </li>
            <li className="nav-item  mega-dropdown-md">
-            <a
-              // className="nav-link dropdown-toggle active-menu"
-              
-              role="button"
-              className={
-                menuItems.some((menu) =>
-                  menu.items.some((elm) => isActive(elm.link))
-                )
-                  ? "nav-link "
-      : "nav-link"
-              }
-
-              // style={{color:'green'}}
-            >
-             Careers
-            </a>
+               <Link
+    href="#our-careers"
+    scroll={true} // allows scrolling to anchors
+    className="nav-link"
+  >
+Careers  </Link>
           </li>
           <li className="nav-item  mega-dropdown-md">
-                      <a
-                        // className="nav-link dropdown-toggle active-menu"
-
-                        role="button"
-                        className={
-                          menuItems.some((menu) =>
-                            menu.items.some((elm) => isActive(elm.link))
-                          )
-                            ? "nav-link "
-                : "nav-link"
-                        }
-
-                        // style={{color:'green'}}
-                      >
-                       FAQ's
-                      </a>
+                     <Link
+    href="#our-faq"
+    scroll={true} // allows scrolling to anchors
+    className="nav-link"
+  >
+    FAQ's
+  </Link>
                     </li>
         </ul>
         {/* End ul */}

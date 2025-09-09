@@ -53,7 +53,7 @@ const WebHosting = () => {
 				Pricing Section Four
 			============================================== 
 			*/}
-        <div className="pricing-section-four pt-170 lg-pt-100">
+        <div className="pricing-section-four pt-170 lg-pt-100" id="our-services">
           <div className="container">
             <div className="row">
               <div className="col-xxl-10 col-md-9 m-auto">
@@ -105,7 +105,7 @@ const WebHosting = () => {
 				Feature Section Twenty Three
 			============================================== 
 			*/}
-        <div className="fancy-feature-twentyThree mt-180 lg-mt-100">
+        <div className="fancy-feature-twentyThree mt-180 lg-mt-100" id="our-about-us">
           <div className="container">
             <div
               className="title-style-seven text-center pb-20"
@@ -161,30 +161,21 @@ const WebHosting = () => {
 				Fancy Short Banner Nine
 			=====================================================
 			*/}
-        {/* <BannerSubscribe /> */}
+      {/* <BannerSubscribe />  */}
         {/* /.fancy-short-banner-nine */}
         {/* 
 			=============================================
 				Feature Section Twenty Four
 			============================================== 
 			*/}
-        <FancyBanner />
+       
         {/* /.fancy-feature-twentyFour */}
         {/* 
 			=============================================
 				Feature Section Twenty Three
 			============================================== 
 			*/}
-        <div className="fancy-feature-twentyThree mt-35">
-          <div className="container">
-            <div className="border-top">
-              <div className="row gx-xxl-5">
-                <FancyBlock />
-              </div>
-            </div>
-          </div>
-          {/* /.container */}
-        </div>
+       
         {/* /.fancy-feature-twentyThree */}
         {/*=====================================================
 			Feedback Section Six
@@ -192,6 +183,7 @@ const WebHosting = () => {
         <div
           className="feedback-section-six p-30 mt-170 lg-mt-100 "
           data-aos="fade-up"
+          id="our-portfolio"
         >
           <div className="bg-wrapper position-relative pt-100 pb-110 lg-pt-60 lg-pb-50">
             <div className="container">
@@ -220,6 +212,7 @@ const WebHosting = () => {
           </div>
           {/* /.bg-wrapper */}
         </div>
+         <FancyBanner />
         {/* /.feedback-section-six */}
         {/* 
 			=============================================
@@ -234,7 +227,7 @@ const WebHosting = () => {
                   className="title-style-seven text-center pb-120 lg-pb-50"
                   data-aos="fade-up"
                 >
-                  <h2 className="main-title fw-bold tx-dark">
+                  <h2 className="main-title fw-bold tx-dark" id="our-faq">
                     Got questions? <br /> Well, we&lsquo;ve got
                     <span className="position-relative d-inline-block">
                       answers <img src="/images/shape/shape_99.svg" alt="" />
@@ -250,7 +243,7 @@ const WebHosting = () => {
                   <h3 className="fw-bold tx-dark mb-30">
                     Didn’t get your answer?
                   </h3>
-                  <Link href="/contact" className="btn-fourteen fw-500 tran3s">
+                  <Link href="/contact/contact-v3" className="btn-fourteen fw-500 tran3s">
                     Submit your question
                   </Link>
                 </div>
@@ -266,7 +259,7 @@ const WebHosting = () => {
 				Fancy Short Banner Ten
 			=====================================================
 			*/}
-        <CallToActions />
+        <CallToActions  />
         {/* /.fancy-short-banner-ten */}
 
         {/*
@@ -278,13 +271,13 @@ const WebHosting = () => {
           <div className="bg-wrapper position-relative">
             <div className="container">
               <div className="row justify-content-between">
-                <div className="col-xl-2 footer-intro mb-40">
+                {/* <div className="col-xl-2 footer-intro mb-40">
                   <div className="logo">
                     <Link href="/">
                       <img src="/images/logo/logo_01.png" alt="brand" />
                     </Link>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
                 {/* End .col */}
 
                 <Footer2 />

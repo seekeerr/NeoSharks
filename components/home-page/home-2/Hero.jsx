@@ -23,7 +23,7 @@ const Hero = () => {
                 Our expert team designs and develops innovative apps that combine speed, security, and seamless user experience.
               </p>
               <Link
-                href="/pages-menu/pricing"
+                href="/contact/contact-v3"
                 className="btn-fourteen fw-500 tran3s"
               >
                 Get a Free Consultation
@@ -32,13 +32,13 @@ const Hero = () => {
           </div>
           {/* End .container */}
 
-          {/* <div className="illustration-holder" data-aos="fade-left">
+          <div className="illustration-holder" data-aos="fade-left">
             <img
-              src="/images/assets/sharkshero.png"
+              src="/images/assets/heroshark.png"
               alt="illustration"
               className="lazy-img main-illustration"
             />
-          </div> */}
+          </div>
           {/* /.illustration-holder */}
         </div>
         {/* /.container */}

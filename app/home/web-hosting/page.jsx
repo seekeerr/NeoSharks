@@ -62,16 +62,16 @@ const WebHosting = () => {
                   data-aos="fade-up"
                 >
                   <h2 className="main-title fw-bold tx-dark">
-                    Design. Develop. Deploy. 
-                   
-                    
+                    Design. Develop. Deploy.
+
+
                   </h2>
-                 <span className="position-relative d-inline-block">
-  <img src="/images/shape/shape_96.svg" alt="shape" />
-  <p className="position-absolute top-50 start-50 translate-middle m-0">
-    — End-to-End Solutions
-  </p>
-</span>
+                  <span className="position-relative d-inline-block">
+                    <img src="/images/shape/shape_96.svg" alt="shape" />
+                    <p className="position-absolute top-50 start-50 translate-middle m-0">
+                      — End-to-End Solutions
+                    </p>
+                  </span>
                 </div>
                 {/* /.title-style-seven */}
               </div>
@@ -89,12 +89,12 @@ const WebHosting = () => {
           <div className="container">
             <div className="text-center mt-100 lg-mt-50 " data-aos="fade-up">
               <div className="d-inline-block consult-text fs-18 fw-500 tx-dark">
-                Not sure which website hosting plan is right for you? We can
-                help.
-                <a href="#" className="fw-normal text-decoration-underline">
-                  Free Consultation
+                Need help choosing the right web app solution? Talk to NeoSharks.
+                <a href="/contact/contact-v1" aria-label="Request a free consultation" className="fw-normal text-decoration-underline ms-2">
+                  Book a free consult
                 </a>
               </div>
+
             </div>
           </div>
           {/* /.container */}
@@ -111,13 +111,42 @@ const WebHosting = () => {
               className="title-style-seven text-center pb-20"
               data-aos="fade-up"
             >
-              <h2 className="main-title fw-bold tx-dark">
-                All Included
-                <span className="position-relative d-inline-block">
-                  Plan
-                  <img src="/images/shape/shape_97.svg" alt="illustration" />
-                </span>
-              </h2>
+     <h2
+  className="main-title fw-bold tx-dark"
+  style={{
+    textAlign: "center",
+    position: "relative",
+    display: "inline-block",
+  }}
+>
+  Why Choose{" "}
+  <span
+    className="position-relative d-inline-block"
+    style={{
+      position: "relative",
+      display: "inline-block",
+    }}
+  >
+    Neo Sharks
+    {/* <img
+      src="/images/shape/shape_97.svg"
+      alt="illustration"
+      style={{
+        position: "absolute",
+        left: "50%",
+        top: "30%",
+        transform: "translate(-50%, -40%)",
+        width: "140%",
+        height: "auto",
+        zIndex: -1, // ✅ behind text
+        pointerEvents: "none", // avoids blocking text
+      }}
+    /> */}
+  </span>
+</h2>
+
+
+
             </div>
             {/* /.title-style-seven */}
             <div className="row gx-xl-5">
@@ -132,7 +161,7 @@ const WebHosting = () => {
 				Fancy Short Banner Nine
 			=====================================================
 			*/}
-        <BannerSubscribe />
+        {/* <BannerSubscribe /> */}
         {/* /.fancy-short-banner-nine */}
         {/* 
 			=============================================

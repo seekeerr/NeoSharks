@@ -7,12 +7,11 @@ const Hero = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-7" data-aos="fade-right">
-              <Link
-                href="/pages-menu/pricing"
+              <div
                 className="slogan d-inline-block"
               >
                 Future-Ready Apps
-              </Link>
+              </div>
               <h1 className="hero-heading fw-bold tx-dark mt-25">
                 Turn Your   
                <span className="position-relative ms-3 d-inline-block" style={{ marginRight: "0.4em" }}>

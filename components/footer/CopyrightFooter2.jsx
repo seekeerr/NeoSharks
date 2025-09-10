@@ -3,12 +3,11 @@ import Link from "next/link";
 const links = [
   {
     title: "Privacy & Terms.",
-    href: "/faq",
+    href: "/",
   },
   {
     title: "Contact Us",
-    href: "/contact",
-  },
+href:"/contact/contact-v3"  },
 ];
 
 const icons = [
@@ -68,7 +67,6 @@ const Footer = () => {
               Copyright © {new Date().getFullYear()}{" "}
               <a
                 style={{ color: "inherit" }}
-                href="https://themeforest.net/user/ib-themes"
                 target="_blank"
                 rel="noopener noreferrer"
               >

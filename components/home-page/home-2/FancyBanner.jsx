@@ -8,7 +8,7 @@ const FancyBanner = () => {
       description:
         "Artificial intelligence is changing the way web applications work, making them smarter, more responsive, and better at engaging users. Thanks to cloud platforms, AI tools are now more easily accessible. Developers are rapidly incorporating advanced features to enhance user experience and streamline operations.",
       buttonLabel: "Read More",
-      illustration: "/images/assets/ils_06.png",
+      illustration: "/images/assets/ai-blog.png",
       illustrationAlt: "illustration",
       illustrationPosition: "right",
       aos: "fade-right",
@@ -19,7 +19,7 @@ const FancyBanner = () => {
       description:
         "In the fast-paced world of startups, choosing the right development stack is crucial for success. Enter the MERN stack (MongoDB, Express.js, React.js, and Node.js) — a powerful combination that offers a compelling solution for building modern web applications. Why is MERN the first choice for startups? Let’s dive in:",
       buttonLabel: "Read More",
-      illustration: "/images/assets/ils_07.png",
+      illustration: "/images/assets/MERN-logo.png",
       illustrationAlt: "illustration",
       illustrationPosition: "left",
       aos: "fade-left",
@@ -28,10 +28,10 @@ const FancyBanner = () => {
   ];
 
   return (
-    <div className="fancy-feature-twentyFour mt-225 lg-mt-130">
+    <div className="fancy-feature-twentyFour mt-50 lg-mt-130" id="our-blogs">
       <div className="container">
         {bannerData.map((data, index) => (
-          <div className="block-style-four mt-200 lg-mt-100" key={index}>
+          <div className="block-style-four mt-50 lg-mt-100" key={index}>
             <div className="row align-items-center">
               <div
                 className={`col-xl-5 col-lg-6 order-lg-${
@@ -67,7 +67,9 @@ const FancyBanner = () => {
                 }`}
                 data-aos={data.aos}
               >
-                <div className="illustration-holder md-mt-60">
+                <div className="illustration-holder md-mt-60" style={{
+                  padding:"50px"
+                }}>
                   <img
                     src={data.illustration}
                     alt={data.illustrationAlt}

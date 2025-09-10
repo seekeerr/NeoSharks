@@ -3,10 +3,11 @@
 import { useEffect, useState } from "react";
 import MainMenu from "./MainMenu";
 import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const DefaulHeader = () => {
   const [navbar, setNavbar] = useState(false);
+  const pathname = usePathname(); // ✅ get current path
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
@@ -23,6 +24,9 @@ const DefaulHeader = () => {
     };
   }, []);
 
+  // ✅ check if the current page is a contact page
+  const hideMenu = pathname.startsWith("/contact");
+
   return (
     <header
       className={`theme-main-menu sticky-menu theme-menu-six ${
@@ -33,24 +37,23 @@ const DefaulHeader = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link href="/" className="d-block">
-             <h4>Neo Sharks</h4>
+              <h4>Neo Sharks</h4>
             </Link>
           </div>
-          {/* End logo */}
-          <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
 
+          <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
             <Link
               href="/contact/contact-v3"
               className="start-btn-one fs-18 fw-500 tran3s position-relative d-none d-lg-block"
             >
               Let's Talk
             </Link>
-          </div>{" "}
-          {/* /.right-widget */}
-          <MainMenu />
+          </div>
+
+          {/* ✅ Show MainMenu only if not on a contact page */}
+          {!hideMenu && <MainMenu />}
         </div>
       </div>
-      {/* /.inner-content */}
     </header>
   );
 };

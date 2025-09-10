@@ -5,16 +5,18 @@ const contactBlocks = [
   {
     id: 1,
     iconSrc: "/images/icon/icon_173.svg",
-    title: "Talk to us",
-    text: "Want to talk to a real human? Please ask our team.",
-    buttonLabel: "Chat with us",
+    title: "Write us a message",
+    text: "Write your message, our team will reach you.",
+    buttonLabel: "write a message",
+    link: "#contact-form"
   },
   {
     id: 2,
     iconSrc: "/images/icon/icon_174.svg",
-    title: "Knowledge Base",
-    text: "For immediate answers from our community.",
-    buttonLabel: "Chat with us",
+    title: "Drop us a mail",
+    text: "Write your mail @",
+    buttonLabel: "contact@neosharks.in",
+    link:"mailto:contact@neosharks.in"
   },
 ];
 
@@ -40,7 +42,7 @@ const BlockContact3 = () => {
               <h5 className="title tx-dark mt-25 mb-10">{block.title}</h5>
               <p className="fs-18 mb-35">{block.text}</p>
               <a
-                href="#"
+               href={block.link}
                 className="btn-twentySix fs-18 fw-500 tran3s position-relative"
               >
                 {block.buttonLabel}
